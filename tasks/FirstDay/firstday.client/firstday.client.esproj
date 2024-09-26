@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/1.0.784122">
+  <PropertyGroup>
+    <StartupCommand>npm start</StartupCommand>
+    <JavaScriptTestFramework>Jasmine</JavaScriptTestFramework>
+    <!-- Allows the build (or compile) script located on package.json to run on Build -->
+    <ShouldRunBuildScript>false</ShouldRunBuildScript>
+    <!-- Folder where production build objects will be placed -->
+    <BuildOutputFolder>$(MSBuildProjectDirectory)\dist\firstday.client\browser\</BuildOutputFolder>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="src\app\assets\**" />
+    <None Remove="src\app\images\**" />
+    <None Remove="src\app\image\**" />
+    <None Remove="src\app\NewFolder\**" />
+    <None Remove="src\NewFolder\**" />
+    <TypeScriptConfiguration Remove="src\app\assets\**" />
+    <TypeScriptConfiguration Remove="src\app\images\**" />
+    <TypeScriptConfiguration Remove="src\app\image\**" />
+    <TypeScriptConfiguration Remove="src\app\NewFolder\**" />
+    <TypeScriptConfiguration Remove="src\NewFolder\**" />
+  </ItemGroup>
+</Project>
